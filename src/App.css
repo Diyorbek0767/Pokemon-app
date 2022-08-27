@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+body{ 
+  height:100vh;
+  background-image: linear-gradient(to bottom right, green, yellow);
+} 
+ 
+.themeText{ 
+  text-align: center; 
+  background-color:  rgb(204, 247, 15); 
+  margin: 0; 
+  height: 80px; 
+  color: #1b2901; 
+  font-size: 50px; 
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search{
+  position: relative;
+  left: -15px;
+  display: block;
+} 
+ 
+.searchArea{ 
+  display: flex; 
+  justify-content: center; 
+  margin-top: 30px; 
+} 
+.searchArea > input{ 
+  width: 30%; 
+  padding: 10px; 
+  border-radius: 10px; 
+  font-size: 25px; 
+  border: none; 
+} 
+input:focus{ 
+  box-shadow: rgba(206, 206, 206, 0.3) 10px 10px 24px!important; 
+  outline: none; 
+} 
+ 
+.searchBtn{ 
+  background-color: rgb(204, 247, 15); 
+  color:#1b2901; 
+  padding: 10px; 
+  font-size: 20px; 
+  font-family: sans-serif; 
+  border-radius: 10px; 
+  border: none;
+  margin-left: 900px;
+  margin-top: 20px; 
+  
+} 
+ 
+.resultCard{ 
+  display: flex; 
+  justify-content: center; 
+  text-align: center; 
+} 
+.resultCard > .card{ 
+  width: 400px; 
+  height: 500px; 
+  background: rgb(233, 236, 221); 
+  margin: 20px 0 0 0; 
+  cursor: pointer; 
+  border-radius: 10px; 
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 14px 5px;
+  border: 5px solid rgb(204, 247, 15) ; 
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif 
+ 
+} 
+.card > img{ 
+  width: 60%; 
 }
